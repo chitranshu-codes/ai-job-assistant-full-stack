@@ -1,9 +1,8 @@
 # 🚀 AI Job Application Assistant
 
-![Project Status](https://img.shields.io/badge/Status-Active-success)
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Next.js](https://img.shields.io/badge/Next.js-14-black)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8)
+![Main Page](./1.png)
+![Upload Page](./2.png)
+![Result Page](./3.png)
 
 A full-stack AI agent that streamlines the job application process. It parses PDF resumes, matches them against a job database using **Vector Similarity Search**, and generates hyper-personalized cover letters using **Google Gemini**.
 
