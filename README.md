@@ -7,28 +7,46 @@
 
 A full-stack AI agent that streamlines the job application process. It parses PDF resumes, matches them against a job database using **Vector Similarity Search**, and generates hyper-personalized cover letters using **Google Gemini**.
 
+---
+
 ## ✨ Key Features
 
-* **📄 Smart Resume Parsing:** Extracts and processes text from PDF resumes using `PyPDF`.
-* **🧠 Vector Search & Matching:** Uses **HuggingFace Embeddings** (`all-MiniLM-L6-v2`) to convert resumes and job descriptions into high-dimensional vectors. Matches are found using Cosine Similarity.
-* **🤖 AI Agent Workflow:** Built with **LangGraph** to orchestrate the flow between parsing, matching, and generation.
-* **✍️ Generative AI Cover Letters:** Utilizes **Google Gemini 2.0 Flash** to write professional, context-aware cover letters tailored to specific job descriptions.
-* **🎨 Modern UI:** A responsive, glassmorphic interface built with **React/Next.js** and **Tailwind CSS**, featuring smooth animations and resizable components.
+* **📄 Smart Resume Parsing**
+  Extracts and processes text from PDF resumes using `PyPDF`.
+
+* **🧠 Vector Search & Matching**
+  Uses **HuggingFace Embeddings** (`all-MiniLM-L6-v2`) to generate high-dimensional vectors and match jobs using cosine similarity.
+
+* **🤖 AI Agent Workflow**
+  Built with **LangGraph** to orchestrate parsing, matching, and generation.
+
+* **✍️ Generative AI Cover Letters**
+  Uses **Google Gemini 2.0 Flash** to produce professional, context-aware cover letters tailored to each job.
+
+* **🎨 Modern UI**
+  Responsive glassmorphic interface using **React/Next.js** + **Tailwind CSS**, featuring smooth animations and resizable elements.
+
+---
 
 ## 🛠️ Tech Stack
 
-### Backend
-* **Framework:** FastAPI
-* **Orchestration:** LangChain & LangGraph
-* **LLM:** Google Gemini 2.0 Flash via `langchain-google-genai`
-* **Embeddings:** HuggingFace (`sentence-transformers`)
-* **Vector Logic:** FAISS / NumPy
+### **Backend**
 
-### Frontend
-* **Framework:** Next.js 14 (App Router) / React
-* **Styling:** Tailwind CSS
-* **HTTP Client:** Axios
-* **Icons:** Lucide React
+* FastAPI
+* LangChain & LangGraph
+* Google Gemini 2.0 Flash (`langchain-google-genai`)
+* HuggingFace Sentence Transformers
+* FAISS / NumPy for vector similarity
+
+### **Frontend**
+
+* Next.js 14 (App Router)
+* React
+* Tailwind CSS
+* Axios
+* Lucide React Icons
+
+---
 
 ## 📂 Project Structure
 
@@ -47,18 +65,21 @@ job-ai-assistant/
 └── README.md
 ```
 
+---
+
 ## 🚀 Getting Started
 
-Follow these steps to set up the project locally.
+### **Prerequisites**
 
-### Prerequisites
 * Python 3.9+
 * Node.js & npm
-* A Google Cloud API Key (for Gemini)
+* Google Cloud API Key (for Gemini)
 
-### 1. Backend Setup
+---
 
-Navigate to the backend folder and create a virtual environment:
+## 🔧 1. Backend Setup
+
+### **Create a virtual environment**
 
 ```bash
 cd backend
@@ -70,56 +91,71 @@ venv\Scripts\activate
 # Mac/Linux
 source venv/bin/activate
 ```
-##Install dependencies:
+
+### **Install dependencies**
 
 ```bash
-
 pip install -r requirements.txt
-Environment Configuration:
-
-Create a .env file inside the backend/ folder and add your API key:
-
-Code snippet
-
-GOOGLE_API_KEY=your_google_api_key_here
-Start the Server:
-
-uvicorn main:app --reload
-The server will start at http://localhost:8000 and pre-calculate embeddings for the job database.
 ```
-2. Frontend Setup
-Open a new terminal and navigate to the frontend folder:
+
+### **Environment Configuration**
+
+Create a `.env` file in the `backend/` folder:
+
+```
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+### **Start the Server**
 
 ```bash
-
-cd frontend
-Install dependencies:
-
-
-npm install
-Start the application:
-
-
-npm run dev
-Open http://localhost:3000 in your browser.
+uvicorn main:app --reload
 ```
+
+Backend runs on: **[http://localhost:8000](http://localhost:8000)**
+
+---
+
+## 💻 2. Frontend Setup
+
+### **Install dependencies**
+
+```bash
+cd frontend
+npm install
+```
+
+### **Start the application**
+
+```bash
+npm run dev
+```
+
+Frontend runs on: **[http://localhost:3000](http://localhost:3000)**
+
+---
 
 ## 💡 How It Works
-### Ingestion: The user uploads a PDF resume via the frontend.
 
-### Embedding: The backend parses the text and generates a vector embedding using HuggingFace models.
+1. **Ingestion** — User uploads a PDF resume.
+2. **Embedding** — Resume is parsed and converted into embeddings (HuggingFace).
+3. **Matching** — Compared with job embeddings from `jobs.json` via cosine similarity.
+4. **Generation** — Gemini generates a custom cover letter using the matched job + resume context.
+5. **Delivery** — UI displays job matches and streamed cover letter output.
 
-### Matching: This vector is compared against pre-computed vectors of job descriptions in jobs.json using Cosine Similarity.
-
-### Generation: The top matching job and the user's resume text are sent to the Gemini LLM with a specific prompt to generate a tailored cover letter.
-
-### Delivery: The results are streamed back to the UI, where the user can view matches and copy/resize the generated letter.
+---
 
 ## 🔮 Future Improvements
-### Add database integration (PostgreSQL/Supabase) for persistent job storage.
 
-### Implement user authentication.
+* Add PostgreSQL/Supabase for persistent job storage
+* Implement user authentication
+* Add automated “Apply Now” email functionality
+* Deploy UI to **Vercel**, backend to **Render**
 
-### Add "Apply Now" automated email functionality.
+---
 
-### Deploy to Vercel (Frontend) and Render (Backend).
+If you'd like, I can also:
+✅ add badges, emojis, or visual improvements
+✅ rewrite in a more corporate or more developer-friendly tone
+✅ generate a GitHub-ready project description
+Just tell me!
