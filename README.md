@@ -151,11 +151,3 @@ Frontend runs on: **[http://localhost:3000](http://localhost:3000)**
 * Implement user authentication
 * Add automated “Apply Now” email functionality
 * Deploy UI to **Vercel**, backend to **Render**
-
----
-
-If you'd like, I can also:
-✅ add badges, emojis, or visual improvements
-✅ rewrite in a more corporate or more developer-friendly tone
-✅ generate a GitHub-ready project description
-Just tell me!
