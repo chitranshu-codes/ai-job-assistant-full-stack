@@ -45,6 +45,7 @@ job-ai-assistant/
 │   ├── public/            # Static Assets
 │   └── tailwind.config.ts # Styling Config
 └── README.md
+```
 
 ## 🚀 Getting Started
 
@@ -68,3 +69,57 @@ venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
+```
+##Install dependencies:
+
+```bash
+
+pip install -r requirements.txt
+Environment Configuration:
+
+Create a .env file inside the backend/ folder and add your API key:
+
+Code snippet
+
+GOOGLE_API_KEY=your_google_api_key_here
+Start the Server:
+
+uvicorn main:app --reload
+The server will start at http://localhost:8000 and pre-calculate embeddings for the job database.
+```
+2. Frontend Setup
+Open a new terminal and navigate to the frontend folder:
+
+```bash
+
+cd frontend
+Install dependencies:
+
+
+npm install
+Start the application:
+
+
+npm run dev
+Open http://localhost:3000 in your browser.
+```
+
+## 💡 How It Works
+### Ingestion: The user uploads a PDF resume via the frontend.
+
+### Embedding: The backend parses the text and generates a vector embedding using HuggingFace models.
+
+### Matching: This vector is compared against pre-computed vectors of job descriptions in jobs.json using Cosine Similarity.
+
+### Generation: The top matching job and the user's resume text are sent to the Gemini LLM with a specific prompt to generate a tailored cover letter.
+
+### Delivery: The results are streamed back to the UI, where the user can view matches and copy/resize the generated letter.
+
+## 🔮 Future Improvements
+### Add database integration (PostgreSQL/Supabase) for persistent job storage.
+
+### Implement user authentication.
+
+### Add "Apply Now" automated email functionality.
+
+### Deploy to Vercel (Frontend) and Render (Backend).
