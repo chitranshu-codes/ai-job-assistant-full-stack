@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-community
+langchain-google-genai
+langgraph
+faiss-cpu
+numpy
+python-dotenv
+scikit-learn
+sentence-transformers
+pypdf

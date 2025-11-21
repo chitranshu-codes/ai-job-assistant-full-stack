@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Machine Learning Engineer",
+    "company": "TechCorp",
+    "location": "Bangalore, India",
+    "description": "Develop and deploy machine learning models for recommendation systems and predictive analytics.",
+    "skills": ["Python", "TensorFlow", "SQL", "Scikit-learn"],
+    "posted_date": "2025-08-20",
+    "salary_range": "12-18 LPA"
+  },
+  {
+    "id": 2,
+    "title": "Data Analyst",
+    "company": "FinInsights",
+    "location": "Remote",
+    "description": "Analyze financial data, create dashboards, and generate insights to support business decisions.",
+    "skills": ["SQL", "Power BI", "Excel", "Python"],
+    "posted_date": "2025-08-25",
+    "salary_range": "8-12 LPA"
+  },
+  {
+    "id": 3,
+    "title": "AI Research Intern",
+    "company": "InnovAI Labs",
+    "location": "New Delhi, India",
+    "description": "Assist in fine-tuning large language models and research on generative AI applications.",
+    "skills": ["Python", "PyTorch", "LangChain", "NLP"],
+    "posted_date": "2025-08-22",
+    "salary_range": "Stipend 20K"
+  },
+  {
+    "id": 4,
+    "title": "Data Scientist",
+    "company": "HealthAI",
+    "location": "Hyderabad, India",
+    "description": "Work on healthcare data to build predictive models for patient outcomes and treatment optimization.",
+    "skills": ["Python", "Pandas", "Deep Learning", "R"],
+    "posted_date": "2025-08-18",
+    "salary_range": "15-22 LPA"
+  },
+  {
+    "id": 5,
+    "title": "GenAI Engineer",
+    "company": "VisionaryTech",
+    "location": "Pune, India",
+    "description": "Design and implement generative AI pipelines including text-to-image and conversational AI systems.",
+    "skills": ["Python", "OpenAI API", "LangChain", "Transformers"],
+    "posted_date": "2025-08-26",
+    "salary_range": "18-25 LPA"
+  },
+  {
+    "id": 6,
+    "title": "Business Intelligence Analyst",
+    "company": "DataBridge",
+    "location": "Gurgaon, India",
+    "description": "Develop BI solutions, automate reporting, and provide insights for strategic planning.",
+    "skills": ["SQL", "Tableau", "ETL", "Python"],
+    "posted_date": "2025-08-15",
+    "salary_range": "10-14 LPA"
+  },
+  {
+    "id": 7,
+    "title": "NLP Engineer",
+    "company": "TextAI",
+    "location": "Chennai, India",
+    "description": "Build natural language processing pipelines for chatbots, sentiment analysis, and document summarization.",
+    "skills": ["Python", "SpaCy", "Transformers", "BERT"],
+    "posted_date": "2025-08-21",
+    "salary_range": "14-20 LPA"
+  },
+  {
+    "id": 8,
+    "title": "Junior Data Analyst",
+    "company": "MarketPulse",
+    "location": "Mumbai, India",
+    "description": "Perform exploratory data analysis and support senior analysts in generating insights for marketing teams.",
+    "skills": ["Excel", "SQL", "Python"],
+    "posted_date": "2025-08-24",
+    "salary_range": "5-8 LPA"
+  },
+  {
+    "id": 9,
+    "title": "AI Product Manager",
+    "company": "NextGenAI",
+    "location": "Remote",
+    "description": "Work with cross-functional teams to design AI-driven products, define requirements, and oversee delivery.",
+    "skills": ["Product Management", "AI Knowledge", "Agile", "Communication"],
+    "posted_date": "2025-08-19",
+    "salary_range": "20-30 LPA"
+  },
+  {
+    "id": 10,
+    "title": "Computer Vision Engineer",
+    "company": "VisionWorks",
+    "location": "Bangalore, India",
+    "description": "Develop computer vision models for object detection, recognition, and video analytics.",
+    "skills": ["Python", "OpenCV", "PyTorch", "Deep Learning"],
+    "posted_date": "2025-08-23",
+    "salary_range": "16-22 LPA"
+  }
+]
