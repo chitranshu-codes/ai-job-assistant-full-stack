@@ -46,3 +46,25 @@ job-ai-assistant/
 │   └── tailwind.config.ts # Styling Config
 └── README.md
 
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+* Python 3.9+
+* Node.js & npm
+* A Google Cloud API Key (for Gemini)
+
+### 1. Backend Setup
+
+Navigate to the backend folder and create a virtual environment:
+
+```bash
+cd backend
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Mac/Linux
+source venv/bin/activate
